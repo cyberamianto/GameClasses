@@ -13,14 +13,15 @@ namespace VideoGame
         public int ID { get; private set; }
         public int Difficoltà { get; }
         public Inventario InvAmbiente { get; set; }
-        public System.Drawing.Image backGroung { get; set; }
-        public Ambiente(string nome, string descrizione, int difficoltà)
+        public System.Drawing.Image Background { get; private set; }
+        public Ambiente(string nome, string descrizione, int difficoltà, System.Drawing.Image bg)
         {
             Nome = nome;
             Descrizione = descrizione;
             Difficoltà = difficoltà;
             InvAmbiente = new Inventario();
             ID = System.Threading.Interlocked.Increment(ref nextID);
+            Background = bg;
         }
     }
 }
