@@ -7,10 +7,10 @@ namespace VideoGame
 {
     public class Mappa
     {
-        public List<Ambiente> ambienti;
+        public Ambiente[,] ambienti; 
         public Mappa()
         {
-            ambienti = new List<Ambiente>();
+            ambienti = new Ambiente[4, 4];
         }
     }
 }

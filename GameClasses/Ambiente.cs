@@ -12,14 +12,13 @@ namespace VideoGame
         static int nextID;
         public int ID { get; private set; }
         public int Difficoltà { get; }
-        public bool[] Uscite; //0 = nord, 1 = est, 2 = sud, 3 = ovest
         public Inventario InvAmbiente { get; set; }
-        public Ambiente(string nome, string descrizione, int difficoltà, bool[] uscite)
+        public System.Drawing.Image backGroung { get; set; }
+        public Ambiente(string nome, string descrizione, int difficoltà)
         {
             Nome = nome;
             Descrizione = descrizione;
             Difficoltà = difficoltà;
-            Uscite = uscite;
             InvAmbiente = new Inventario();
             ID = System.Threading.Interlocked.Increment(ref nextID);
         }
