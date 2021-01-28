@@ -5,9 +5,9 @@ using System.Web;
 
 namespace VideoGame
 {
-    public abstract class BaseEntity
+    public class Entity
     {
-        protected BaseEntity(string nome, string desc, bool racc, bool indoss)
+        public Entity(string nome, string desc, bool racc, bool indoss)
         {
             Nome = nome;
             Descrizione = desc;
