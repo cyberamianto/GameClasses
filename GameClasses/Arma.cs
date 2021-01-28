@@ -5,9 +5,9 @@ using System.Web;
 
 namespace VideoGame
 {
-    public class Arma : EntityRaccoglibile
+    public class Arma : Entity
     {
-        public Arma(string nome, string desc, int danno, int durabilità) : base(nome, desc, false)
+        public Arma(string nome, string desc, int danno, int durabilità) : base(nome, desc, true, true)
         {
             Danno = danno;
             Durabilità = durabilità;
