@@ -11,7 +11,7 @@ namespace VideoGame
         public string Descrizione { get; set; }
         static int nextID;
         public int ID { get; private set; }
-        public int Difficoltà { get; }
+        public int Difficoltà { get; set; }
         public Inventario InvAmbiente { get; set; }
         public System.Drawing.Image backGroung { get; set; }
         public Ambiente(string nome, string descrizione, int difficoltà)
