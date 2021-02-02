@@ -7,6 +7,6 @@ namespace VideoGame
 {
     public class Player : Personaggio
     {
-        public Player(string nome, int salute, int exp) : base(nome, salute, exp) { }
+        public Player(string nome, string salute, int exp) : base(nome, salute, exp) { }
     }
 }
