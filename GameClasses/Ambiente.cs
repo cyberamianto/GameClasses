@@ -23,6 +23,7 @@ namespace VideoGame
             InvAmbiente = new Inventario();
             ID = System.Threading.Interlocked.Increment(ref nextID);
             Background = bgPath;
+            npcAmb = new List<NPC>();
         }
     }
 }
