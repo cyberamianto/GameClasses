@@ -7,7 +7,7 @@ namespace VideoGame
 {
     public class NPC : Personaggio
     {
-        public NPC(string nome, int salute, int exp, string desc, string amb) : base(nome, salute, exp)
+        public NPC(string nome, string salute, int exp, string desc, string amb) : base(nome, salute, exp)
         {
             Descrizione = desc;
             Amb = amb;
