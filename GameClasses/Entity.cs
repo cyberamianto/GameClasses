@@ -14,9 +14,9 @@ namespace VideoGame
             Raccoglibile = racc;
             Indossabile = indoss;
         }
-        protected string Nome { get; set; } //nome entità
-        protected string Descrizione { get; set; } //descrizione entità
-        protected bool Raccoglibile { get; set; } //entità raccoglibile si/no
-        protected bool Indossabile { get; set; } //entità indossabile si/no
+        public string Nome { get; set; } //nome entità
+        public string Descrizione { get; set; } //descrizione entità
+        public bool Raccoglibile { get; set; } //entità raccoglibile si/no
+        public bool Indossabile { get; set; } //entità indossabile si/no
     }
 }
