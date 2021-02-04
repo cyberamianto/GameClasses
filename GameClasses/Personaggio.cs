@@ -12,6 +12,7 @@ namespace VideoGame
             Nome = nome;
             Salute = salute;
             Exp = exp;
+            Inv = new Inventario();
         }
         public string Nome { get; set; }
         public string Salute { get; set; }
