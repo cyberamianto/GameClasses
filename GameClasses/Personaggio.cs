@@ -13,9 +13,9 @@ namespace VideoGame
             Salute = salute;
             Exp = exp;
         }
-        protected string Nome { get; set; }
-        protected string Salute { get; set; }
-        protected int Exp { get; set; }
+        public string Nome { get; set; }
+        public string Salute { get; set; }
+        public int Exp { get; set; }
         public Inventario Inv { get; set; }
     }
 }
