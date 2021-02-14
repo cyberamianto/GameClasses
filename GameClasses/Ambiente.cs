@@ -13,7 +13,7 @@ namespace VideoGame
         public int ID { get; private set; }
         public int Difficoltà { get; set; }
         public Inventario InvAmbiente { get; set; }
-        public string Background { get; private set; }
+        public string Background { get; set; }
         public List<NPC> npcAmb { get; set; }
         public Ambiente(string nome, string descrizione, int difficoltà, string bgPath)
         {
