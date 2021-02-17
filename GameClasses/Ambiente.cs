@@ -54,6 +54,7 @@ namespace VideoGame
             Difficoltà = difficoltà;
             InvAmbiente = new Inventario();
             ID = System.Threading.Interlocked.Increment(ref nextID);
+            BackgroundUrl = bgPath;
             npcAmb = npcAmbC;
         }
     }
