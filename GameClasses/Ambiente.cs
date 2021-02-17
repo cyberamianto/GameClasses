@@ -26,5 +26,15 @@ namespace VideoGame
             BackgroundUrl = bgPath;
             npcAmb = new List<NPC>();
         }
+        public Ambiente(string nome, string descrizione, int difficoltà, byte[] background)
+        {
+            Nome = nome;
+            Descrizione = descrizione;
+            Difficoltà = difficoltà;
+            InvAmbiente = new Inventario();
+            ID = System.Threading.Interlocked.Increment(ref nextID);
+            Background = background;
+            npcAmb = new List<NPC>();
+        }
     }
 }
