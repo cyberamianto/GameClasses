@@ -2,11 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Runtime.Serialization;
 
 namespace VideoGame
 {
+    [DataContract]
     public class Inventario
     {
+        [DataMember]
         List<Entity> inventario;
         public Inventario()
         {

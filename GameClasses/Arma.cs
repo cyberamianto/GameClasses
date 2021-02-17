@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Runtime.Serialization;
 
 namespace VideoGame
 {
+    [DataContract]
     public class Arma : Entity
     {
         public Arma(string nome, string desc, int danno, int durabilità) : base(nome, desc, true, true)
@@ -12,7 +14,9 @@ namespace VideoGame
             Danno = danno;
             Durabilità = durabilità;
         }
-        int Danno { get; set; }
-        int Durabilità { get; set; }
+        [DataMember]
+        public int Danno { get; set; }
+        [DataMember]
+        public int Durabilità { get; set; }
     }
 }
