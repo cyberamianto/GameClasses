@@ -18,5 +18,6 @@ namespace VideoGame
         public string Descrizione { get; set; } //descrizione entità
         public bool Raccoglibile { get; set; } //entità raccoglibile si/no
         public bool Indossabile { get; set; } //entità indossabile si/no
+        public byte[] ImgEntity { get; set; }
     }
 }

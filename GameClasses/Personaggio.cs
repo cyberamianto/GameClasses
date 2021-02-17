@@ -18,5 +18,6 @@ namespace VideoGame
         public string Salute { get; set; }
         public int Exp { get; set; }
         public Inventario Inv { get; set; }
+        public byte[] Skin { get; set; }
     }
 }
