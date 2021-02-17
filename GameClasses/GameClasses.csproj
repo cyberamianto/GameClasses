@@ -48,7 +48,6 @@
     <Compile Include="Entity.cs" />
     <Compile Include="Inventario.cs" />
     <Compile Include="Mappa.cs" />
-    <Compile Include="MappaVet.cs" />
     <Compile Include="NPC.cs" />
     <Compile Include="Personaggio.cs" />
     <Compile Include="Player.cs" />
