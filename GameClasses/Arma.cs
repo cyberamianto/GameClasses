@@ -9,7 +9,7 @@ namespace VideoGame
     [DataContract]
     public class Arma : Entity
     {
-        public Arma(string nome, string desc, int danno, int durabilità) : base(nome, desc, true, true)
+        public Arma(string nome, string desc, int danno, int durabilità, byte[] imgArma) : base(nome, desc, true, true, imgArma)
         {
             Danno = danno;
             Durabilità = durabilità;

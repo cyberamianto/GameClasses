@@ -9,12 +9,13 @@ namespace VideoGame
     [DataContract]
     public class Entity
     {
-        public Entity(string nome, string desc, bool racc, bool indoss)
+        public Entity(string nome, string desc, bool racc, bool indoss, byte[] imgEntity)
         {
             Nome = nome;
             Descrizione = desc;
             Raccoglibile = racc;
             Indossabile = indoss;
+            ImgEntity = imgEntity;
         }
         [DataMember]
         public string Nome { get; set; } //nome entità
