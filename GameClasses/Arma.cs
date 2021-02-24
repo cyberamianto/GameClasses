@@ -7,7 +7,8 @@ using System.Runtime.Serialization;
 namespace VideoGame
 {
     [DataContract]
-    public class Arma : Entity
+    [KnownType(typeof(Arma))]
+    public class Arma : BaseEntity
     {
         public Arma(string nome, string desc, int danno, int durabilità, byte[] imgArma) : base(nome, desc, true, true, imgArma)
         {

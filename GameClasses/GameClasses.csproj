@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Ambiente.cs" />
     <Compile Include="Arma.cs" />
+    <Compile Include="BaseEntity.cs" />
     <Compile Include="Entity.cs" />
     <Compile Include="Inventario.cs" />
     <Compile Include="Mappa.cs" />
