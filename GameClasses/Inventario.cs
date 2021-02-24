@@ -10,21 +10,21 @@ namespace VideoGame
     public class Inventario
     {
         [DataMember]
-        public List<BaseEntity> inventario;
+        public List<Entity> inventario;
         public Inventario()
         {
-            inventario = new List<BaseEntity>();
+            inventario = new List<Entity>();
         }
-        public BaseEntity this[int i]
+        public Entity this[int i]
         {
             get { return inventario[i]; }
             set { inventario[i] = value; }
         }
-        public void Add(BaseEntity oggetto)
+        public void Add(Entity oggetto)
         {
             inventario.Add(oggetto);
         }
-        public void Remove(BaseEntity oggetto)
+        public void Remove(Entity oggetto)
         {
             inventario.Remove(oggetto);
         }
