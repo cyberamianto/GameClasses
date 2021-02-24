@@ -10,7 +10,7 @@ namespace VideoGame
     public class Inventario
     {
         [DataMember]
-        List<Entity> inventario;
+        public List<Entity> inventario;
         public Inventario()
         {
             inventario = new List<Entity>();
